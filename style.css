@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@200;400;500;600&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Arima', cursive;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* ------ utility classes --- */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+.padding {
+    padding: 1rem 2rem;
+}
+
+
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-25 {
+    gap: 25px;
+}
+
+.heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+}
+
+/* ------ all button's styling here ----  */
+.small-btn {
+    padding: 0.3rem 0.8rem;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #3400ff !important;
+    cursor: pointer;
+    font-size: 15px !important;
+}
+
+/* ------ button's styling end here ---- */
+
+/* ------ utility classes end  --- */
+
+
+
+/* ----- header styling start --- */
+
+header {
+    position: relative;
+    background: #3400ff;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #3400ff;
+    z-index: 11;
+}
+
+.logo img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.menu-list {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.menu-list li {
+    margin: 0px 10px;
+}
+
+.menu-list li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.icons i {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icons .bar {
+    display: none;
+    font-size: 3rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.header-content {
+    max-width: 650px;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    padding-left: 2rem;
+}
+
+.header-content p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.header-content span {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.header-img {
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+
+.header-img img {
+    max-width: 483px;
+}
+
+/* ----- header styling end- --- */
+
+
+/* ----- main styling start --- */
+.companies a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 10px;
+    color: #000;
+}
+
+.cards {
+    position: relative;
+}
+
+.card.card-active {
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card.card.card-active h3 {
+    color: #3400ff;
+}
+
+.card {
+    padding: 19px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 12px;
+}
+
+.card:hover {
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card img {
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.card p {
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.arrow {
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3400ff;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* ---- blog-content --- */
+
+.allarticles h3 {
+    font-size: 1.2rem;
+    color: #3400ff;
+    font-weight: 600;
+    margin-top: 55px;
+    cursor: pointer;
+}
+
+.blogs {
+    padding-bottom: 30px;
+}
+
+.blog {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.blog img {
+    height: 100%;
+}
+
+.blog-content {
+    position: relative;
+    background: #fff;
+    padding: 1rem 3rem;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.blog-content span {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #3400ff;
+}
+
+.blog-content h3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.blog-content p {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 31px;
+}
+
+.blog-user {
+    position: absolute;
+    bottom: -16px;
+    left: 38px;
+}
+
+.blog-user .user-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.blog-user .user-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.blog-user h4 {
+    align-self: flex-start;
+    font-size: 17px;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.blog-big-img {
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 10px;
+}
+
+
+/* ----- FAQ section -- */
+.faq {
+    background-color: #e0f1ff;
+}
+
+.faq h1 {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.faq p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #363333;
+    margin-bottom: 26px;
+    line-height: 28px;
+}
+
+.faq h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 14px;
+}
+
+.faq img {
+    width: 100%;
+    height: 100%;
+}
+
+.faq .small-btn {
+    border: none;
+    background-color: #3400ff;
+    color: #fff !important;
+}
+
+/* --- download section --- */
+.download {
+    background-color: #fff;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.download-content {
+    flex-basis: 48%;
+}
+
+.download-content span {
+    font-weight: 500;
+}
+
+.download-email {
+    flex-basis: 48%;
+    height: 55px;
+    background-color: #e0f1ff;
+    border-radius: 37px;
+    padding: 5px;
+}
+
+.download-email form {
+    height: 100%;
+}
+
+.download-email form input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0px 18px;
+    font-size: 15px;
+}
+
+.download-email form input::placeholder {
+    color: #000;
+}
+
+.download-email form button {
+    height: 100%;
+    padding: 12px 2rem;
+    border: none;
+    border-radius: 25px;
+    background: #3400ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ----- main styling end --- */
+
+/* ------ footer ---- */
+footer{
+    background: #3400ff;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+footer ul{
+    margin-top: 20px;
+}
+
+.footer-list li,
+.left-list li{
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+}
+
+.footer-list li:first-child{
+  border-right: none;
+}
+
+footer ul li a{
+    color: #fff;
+    font-size: 15px;
+}
+
+
+
+.icons div{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #fff;
+    justify-content: center;
+}
+.icons div i{
+    color: #3400ff;
+    font-size: 1.5rem;
+}
+.copyright{
+    text-align: center;
+}
+.copyright p{
+    font-size: 1rem;
+    color: #000;
+    font-weight: 600;
+}
+/* ---- media query- --- */
+
+@media screen and (max-width:1261px) {
+    .card {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .grid-col-5 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .blog-content {
+        padding: 1rem;
+    }
+
+    .blog-user {
+        left: 14px;
+    }
+}
+
+@media screen and (max-width:1088px) {
+    .home-data {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-img {
+        position: relative;
+        left: 0;
+        top: 0;
+        padding-top: 100px;
+    }
+
+    .grid-col-5 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .blog {
+        border-top-left-radius: 94px;
+        flex-flow: column;
+    }
+
+    .blog-big-img {
+        height: 60%;
+        width: 100%;
+        border-top-left-radius: 94px;
+    }
+
+    .blog-big-img img {
+        width: 100%;
+        border-top-right-radius: 12px;
+    }
+}
+
+@media screen and (max-width:893px) {
+    .home-data {
+        flex-flow: column-reverse;
+    }
+
+    .header-img {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .header-img img {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .header-content {
+        padding-top: 37px;
+        align-self: self-start;
+    }
+
+}
+
+@media screen and (max-width:760px) {
+    .icons .bar {
+        display: block;
+    }
+
+    .padding {
+        padding: 1rem;
+    }
+
+    .menu-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #3400ff;
+        flex-flow: column;
+        align-items: flex-start;
+        padding: 1rem;
+        transition: all 0.3s ease;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        z-index: 11;
+    }
+
+    .menu-list.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .menu-list li {
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+    .header-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .grid-col-5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-col-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .blog {
+        flex-flow: row;
+    }
+
+    .blog-big-img {
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .blog-big-img img {
+        width: auto;
+        border-top-right-radius: 0px;
+    }
+
+
+    .faq-data {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .download {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    .download-email {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .blog {
+        flex-flow: column;
+        margin-bottom: 50px;
+    }
+
+    .blog-big-img {
+        height: 60%;
+        background-color: #f5f5f5;
+    }
+
+    .blog-big-img img {
+        width: 100%;
+        border-top-right-radius: 12px;
+    }
+
+    .blog-user {
+        flex-flow: column;
+        bottom: -53px;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 0;
+    }
+
+    .blog-user h4 {
+        margin-top: 0px;
+    }
+
+    .user-img {
+        border-color: #3400ff !important;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .grid-col-5 {
+        grid-template-columns: 1fr;
+    }
+
+    .download form button {
+        padding: 8px 1rem
+    }
+}
+
+@media screen and (max-width:364px) {
+    .header-content p {
+        font-size: 1.6rem;
+    }
+
+    .allarticles {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    .allarticles h3 {
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+}
+
+
+/* ---- media query end - --- */

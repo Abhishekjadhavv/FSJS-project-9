@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- -----custom css here ---- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Developer Landing Page</title>
+</head>
+
+<body>
+    <!-- --- header start --- -->
+    <header id="Home">
+        <nav class="navbar flex space-between padding">
+            <div class="logo"><img src="img/Logo.png" alt=""></div>
+            <ul class="menu-list flex">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#APIs">APIs</a></li>
+                <li><a href="#Blogs">Blogs</a></li>
+                <li><a href="#Forums">Forums</a></li>
+                <li><a href="#LogIn">LogIn</a></li>
+                <li><a href="#" class="small-btn">Sign Up</a></li>
+            </ul>
+            <div class="icons flex">
+                <i class='bx bx-search'></i>
+                <i class='bx bx-menu bar'></i>
+            </div>
+        </nav>
+
+        <div class="home-data gap-10">
+            <div class="header-content">
+                <img src="img/Rectangle_12.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, perspiciatis.</p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            </div>
+
+            <div class="header-img">
+                <img src="img/IMAGE HERE.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- ---- header end ---- -->
+
+    <!-- ---- main start -- -->
+    <main>
+        <!-- Companies -->
+        <div class="companies flex padding gap-25 flex-wrap">
+            <a href="#" class="company-items">Company One</a>
+            <a href="#" class="company-items">Company Two</a>
+            <a href="#" class="company-items">Company Three</a>
+        </div>
+
+        <!-- API Section -->
+        <section class="apis padding" id="APIs">
+            <h1 class="heading">APIs<br />by category</h1>
+
+            <div class="cards grid grid-col-5 gap-10">
+                <div class="card card-active">
+                    <img src="img/Group 97.png" alt="">
+                    <h3>Identity & <br> Security</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card">
+                    <img class="card-logo" src="img/Group 98.png">
+                    <h3 class="card-head">Data & <br> Analytics</h3>
+                    <p class="card-body">Lorem ipsum dolor sit amt, <br> consectetur adipiscing.</p>
+                </div>
+                <div class="card">
+                    <img class="card-logo" src="img/Group 99.png">
+                    <h3 class="card-head">Commercial</h3>
+                    <p class="card-body">Lorem ipsum dolor sit amt, <br> consectetur adipiscing.</p>
+                </div>
+                <div class="card">
+                    <img class="card-logo" src="img/Group 100.png">
+                    <h3 class="card-head">Offers & <br> Benefits</h3>
+                    <p class="card-body">Lorem ipsum dolor sit amt, <br> consectetur adipiscing.</p>
+                </div>
+                <div class="card">
+                    <img class="card-logo" src="img/Group 101.png">
+                    <h3 class="card-head">Payment <br> Methods</h3>
+                    <p class="card-body">Lorem ipsum dolor sit amt, <br> consectetur adipiscing.</p>
+                </div>
+                <div class="arrow flex">
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------Blogs section------  -->
+        <section class="blogs padding" id="Blogs">
+            <div class="allarticles flex space-between">
+                <h1 class="heading">Latest<br />blog article</h1>
+                <h3>See All Articles</h3>
+            </div>
+            <div class="blogs grid grid-col-2 gap-25">
+                <div class="blog flex">
+                    <div class="blog-big-img">
+                        <img src="img/Rectangle.png" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <span>06 Aug 2019</span>
+                        <h3>Custom-made<br />loyalty programme</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quasi nobis voluptatem
+                            praesentium assumenda voluptates!</p>
+
+                        <div class="blog-user flex gap-10">
+                            <div class="user-img">
+                                <img src="img/pic-3.png">
+                            </div>
+                            <h4>Harry bhai</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog flex">
+                    <div class="blog-big-img">
+                        <img src="img/Rectangle Copy.png" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <span>08 Aug 2019</span>
+                        <h3>You can<br />traveling with ease</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quasi nobis voluptatem
+                            praesentium assumenda voluptates!</p>
+                        <div class="blog-user flex gap-10">
+                            <div class="user-img">
+                                <img src="img/pic-2.png">
+                            </div>
+                            <h4>shital Roy</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="faq" id="Forums">
+            <div class="faq-data grid grid-col-2">
+
+                <div class="faq-content padding">
+                    <h1>Have <br> a question</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique mollitia <br>nam animi
+                        exercitationem et eum enim nulla veritatis,</p>
+                    <h4>Do you have any question about anythings ?</h4>
+                    <button class="small-btn">Contact Us</button>
+                </div>
+
+                <div class="faq-img">
+                    <img src="img/Rectangle_38-2 (1).png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Download -->
+        <section class="padding download flex space-between">
+            <div class="download-content">
+                <h1 class="heading">Download <span> Now</span></h1>
+            </div>
+            <div class="download-email">
+                <form class="flex">
+                    <input placeholder="Enter your email address" />
+                    <button>Download</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <!-- ---- main end -- -->
+
+    <!-- ----- footer start---- -->
+    <footer class="padding">
+        <div class="footer">
+            <div class="footer-box flex space-between flex-wrap gap-25">
+                <div class="footer-logo">
+                    <img src="img/Logo.png" alt="">
+                </div>
+                <div class="icons flex gap-10">
+                    <div class="flex"><i class='bx bxl-instagram'></i></div>
+                    <div class="flex"><i class='bx bxl-twitter'></i></div>
+                    <div class="flex"><i class='bx bxl-facebook'></i></div>
+                </div>
+            </div>
+
+            <div class="footer-box flex space-between flex-wrap gap-25">
+
+                <ul class="footer-list flex gap-25 flex-wrap">
+                    <li><a href="#">jadhav23@gmail.com</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">APIs</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Forums</a></li>
+                </ul>
+
+                <ul class="left-list flex gap-25 flex-wrap">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <div class="copyright padding">
+        <p>Created By Mr.Abhishek jadhav | All Rights Reserved.</p>
+    </div>
+    <!-- ----- footer end ---- -->
+
+    <!-- ---- js here --- -->
+
+    <script>
+        const menu = document.querySelector(".menu-list"),
+            bar = document.querySelector(".bar");
+
+        bar.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            bar.classList.toggle("bx-x");
+        });
+    </script>
+</body>
+
+</html>
